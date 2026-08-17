@@ -5,7 +5,112 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="DOGO — Discover, compare and save on products worth buying.">
 <title>DOGO — Discover. Compare. Save.</title>
-<style>
+/* DOGO HERO */
+.dogo-hero{
+  padding:80px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#fff7f3,#ffffff);
+  border-bottom:1px solid #eee;
+}
+
+.dogo-hero-content{
+  max-width:900px;
+  margin:auto;
+}
+
+.dogo-badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:30px;
+  background:#fff0ec;
+  color:#ff4d2d;
+  font-size:12px;
+  font-weight:800;
+}
+
+.dogo-hero h1{
+  margin:20px 0 15px;
+  font-size:clamp(42px,7vw,76px);
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-3px;
+}
+
+.dogo-hero h1 span{
+  color:#ff4d2d;
+}
+
+.dogo-hero p{
+  max-width:650px;
+  margin:0 auto 30px;
+  color:#666;
+  font-size:18px;
+}
+
+.dogo-search{
+  max-width:650px;
+  margin:auto;
+  display:flex;
+  padding:6px;
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.dogo-search input{
+  flex:1;
+  border:0;
+  outline:0;
+  padding:14px;
+  font-size:16px;
+}
+
+.dogo-search button{
+  border:0;
+  padding:0 25px;
+  border-radius:10px;
+  background:#111;
+  color:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.dogo-quick-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+
+.dogo-quick-links a{
+  padding:8px 14px;
+  border:1px solid #ddd;
+  border-radius:30px;
+  background:#fff;
+  color:#444;
+  font-size:13px;
+}
+
+@media(max-width:600px){
+  .dogo-hero{
+    padding:55px 15px;
+  }
+
+  .dogo-hero h1{
+    font-size:45px;
+    letter-spacing:-2px;
+  }
+
+  .dogo-search{
+    flex-direction:column;
+  }
+
+  .dogo-search button{
+    padding:13px;
+  }
+}<style>
 :root{
   --bg:#f7f7f5;--card:#fff;--text:#111;--muted:#6d6d6d;--line:#e8e8e3;
   --accent:#ff5a36;--accent2:#ffd34d;--dark:#151515;--radius:22px;
